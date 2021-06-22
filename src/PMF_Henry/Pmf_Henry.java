@@ -21,8 +21,8 @@ public class Pmf_Henry {
 	// trainPath的格式是userID，itemID，rate
 	// testPath的格式是userID，itemID，rate
 	// split_Sign表示的是输入文件中三元组的分隔符号
-	static String trainPath = new String("data/movielens1m-CompressedTrain0.2.txt");//("data/eachMovie-2k-CompressedTrain0.3.txt");//("data/train_vec.txt");
-	static String testPath = new String("data/movielens1m-CompressedTest0.2.txt");//("data/eachMovie-2k-CompressedTest0.3.txt");//("data/probe_vec.txt");
+	static String trainPath = new String("src/data/movielens1m-CompressedTrain0.2.txt");//("data/eachMovie-2k-CompressedTrain0.3.txt");//("data/train_vec.txt");
+	static String testPath = new String("src/data/movielens1m-CompressedTest0.2.txt");//("data/eachMovie-2k-CompressedTest0.3.txt");//("data/probe_vec.txt");
 	static String split_Sign = new String(" ");
 	static int[][] train;
 	static int[][] test;
@@ -148,8 +148,8 @@ public class Pmf_Henry {
 
 	/**
 	 * R_{i,j} = \sigma_{l \in [0, k]} U_{i,l} * V_{l, j}
-	 * @param userId
-	 * @param itemId
+	 * @param paraUserId
+	 * @param paraItemId
 	 * @return
 	 */
 	static double predict(int paraUserId, int paraItemId) {

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class DataInfo {
 	
-	public static int userNumber = 200;//49290;//9439;//88238;//4696;  //1049511;//6040; 49290
+	public static int userNumber = 6040;//49290;//9439;//88238;//4696;//1049511;//6040; 49290
 	
-	public static int itemNumber = 420;//139738;// 139738; //66726;//3952; 139738
+	public static int itemNumber = 3952;//139738;// 139738; //66726;//3952; 139738
 	
-	public static short featureNumber = 10;
+	public static short featureNumber = 20;
 	
 	public static double alpha = 0.001;
 	
@@ -27,8 +27,8 @@ public class DataInfo {
 	
 	public static double[][] itemFeature = new double[itemNumber][featureNumber];
 	
-	public static int trainNumber = 819190;//532274;//4851475;
-	public static int testNumber  = 132550;//93100	
+	public static int trainNumber = 819189;//532274;//4851475;
+	public static int testNumber  = 181020;//93100
 	
 	public static int[] user_record = new int[trainNumber];
 	public static int[] item_record = new int[trainNumber];
